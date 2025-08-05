@@ -34,7 +34,7 @@ python test_py39.py
 
 ## 📞 Suport
 
-- Email: api@academiadepolitie.com
+- Email: contact@academiadepolitie.com
 - Website: [academiadepolitie.com](https://www.academiadepolitie.com)
 
 ---
