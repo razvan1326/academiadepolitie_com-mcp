@@ -1,0 +1,2 @@
+# Fără dependențe externe - folosește doar librării standard Python 3.9
+# urllib.request, json, asyncio sunt deja incluse în Python standard

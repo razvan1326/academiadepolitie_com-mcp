@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# PyInstaller
+build/
+dist/
+*.spec
+*.exe
+*.app
+*.dmg
+*.pkg
+*.AppImage
+*.deb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Secrets - NEVER commit these!
+.env
+*.jwt
+jwt_token.txt
+config.local.json
+
+# Test files
+test_*.py
+!test_py39.py
+!test_server.py
+
+# Temporary
+*.tmp
+*.bak
+*.cache
