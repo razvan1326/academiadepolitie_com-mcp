@@ -14,7 +14,7 @@ Descarcă installer-ul pentru sistemul tău de la [Releases](../../releases/late
 
 1. Descarcă installer-ul pentru OS-ul tău
 2. Rulează aplicația
-3. Introdu JWT token din [contul tău Academiadepolitie](https://www.academiadepolitie.com/cont_elev_setari)
+3. Introdu JWT token din [contul tău Academiadepolitie.com](https://www.academiadepolitie.com/setari-candidat.html)
 4. Restart Claude Desktop
 5. Întreabă Claude: "Arată-mi profilul meu de pe Academiadepolitie.com"
 
