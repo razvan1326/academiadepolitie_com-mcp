@@ -2,8 +2,7 @@ name: Build MCP Installers
 
 on:
   push:
-    branches: [ main ]
-    tags: [ 'v*' ]
+    tags: ['v*']
   workflow_dispatch:
 
 jobs:
@@ -40,20 +39,20 @@ jobs:
     - name: Build installer (Windows)
       if: matrix.os == 'windows-latest'
       run: |
-        python build_installer.py
+        pyinstaller --onefile --windowed --name Academiadepolitie_com_MCP_Installer installer_standalone.py
         move "dist\Academiadepolitie_com_MCP_Installer.exe" "Academiadepolitie_com_MCP_Setup.exe"
     
     - name: Build installer (macOS)
       if: matrix.os == 'macos-latest'
       run: |
-        python build_installer.py
+        pyinstaller --onefile --windowed --name Academiadepolitie_com_MCP_Installer installer_standalone.py
         cd dist
         zip -r ../Academiadepolitie_com_MCP_macOS.zip Academiadepolitie_com_MCP_Installer.app
     
     - name: Build installer (Linux)
       if: matrix.os == 'ubuntu-latest'
       run: |
-        python build_installer.py
+        pyinstaller --onefile --name Academiadepolitie_com_MCP_Installer installer_standalone.py
         mv "dist/Academiadepolitie_com_MCP_Installer" "Academiadepolitie_com_MCP_Linux"
         chmod +x Academiadepolitie_com_MCP_Linux
     
